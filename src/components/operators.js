@@ -1,4 +1,6 @@
 import { ACTIONS } from "./Board"
+import React from 'react';
+
 
 export default function OperationButton({ dispatch, operation }) {
     return (

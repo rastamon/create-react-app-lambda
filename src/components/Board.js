@@ -2,8 +2,8 @@ import React, { useReducer } from 'react';
 import './styles/keyboard.css'
 import DigitButton from './digits';
 import OperationButton from './operators';
-import calculate from './functions/calc-db-dg'
-import checkBalancedParentheses from './functions/calc-db-dg'
+import { calculate, checkBalancedParentheses } from './functions/calc-db-dg.js'
+
 
 export const ACTIONS = {
     ADD_DIGIT: 'add_digit',

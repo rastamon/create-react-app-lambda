@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Alkalami&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    /* font-family: 'Alkalami', serif; */
+    font-weight: normal;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    background: hsl(240, 3%, 7%);
+    background-image: url(./pattern-3.svg);
+}
+
+h1 {
+    font-family: 'Alkalami', serif;
+    padding: 0;
+    color: white;
+    font-weight: 400;
+    font-size: 5em
+}
+
+.material-symbols-outlined {
+    font-variation-settings:
+        'FILL' 0,
+        'wght' 400,
+        'GRAD' 0,
+        'opsz' 48;
+    font-size: 1.5em;
+
+}
+
+.calculator-grid {
+    display: grid;
+    gap: 0.25em;
+    justify-content: center;
+    align-content: center;
+    /* min-height: 100vh; */
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: minmax(120px, auto) repeat(5, 80px);
+
+
+}
+
+.calculator-grid>button {
+    color: white;
+    cursor: pointer;
+    font-size: 2rem;
+    border: .05em solid hsl(240, 2%, 23%);
+    outline: none;
+    /* background-color: rgba(0, 0, 0, 0); */
+    background: hsl(240, 3%, 7%);
+
+    border-radius: 0.4em;
+    transition: background 250ms ease-in-out;
+
+}
+
+.calculator-grid>button:hover {
+    cursor: pointer;
+    /* background: hsl(240, 52%, 23%); */
+    background: hsl(212, 100%, 50%);
+}
+
+#backspace:hover {
+    background: hsl(5, 100%, 50%);
+}
+
+.span-two {
+    grid-column: span 2;
+}
+
+
+.output {
+    grid-column: 1 / -1;
+    background: hsl(240, 3%, 7%);
+
+    /* background-color: rgba(0, 0, 0, 0.75); */
+    border: .1em solid hsl(212, 100%, 50%);
+    border-radius: 0.4em;
+
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column;
+    padding: 10px;
+    word-wrap: break-word;
+    word-break: break-all;
+    position: relative;
+}
+
+.output .formula {
+    background-color: inherit;
+    border: none;
+    font-size: 2.5rem;
+}
+
+.output .previous-operand {
+    color: rgba(255, 255, 255, 0.75);
+    font-size: 1.5rem;
+}
+
+.output .current-operand {
+    color: white;
+    background-color: rgba(0, 0, 0, 0);
+    font-size: 2rem;
+    width: 100%;
+    border: none;
+    outline: none;
+
+}

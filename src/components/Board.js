@@ -3,7 +3,7 @@ import './styles/keyboard.css'
 import DigitButton from './digits';
 import OperationButton from './operators';
 import calculate from './functions/calculate';
-import checkBalancedParentheses from './functions/checkBalancedParentheses';
+// import checkBalancedParentheses from './functions/checkBalancedParentheses';
 
 
 export const ACTIONS = {
@@ -156,7 +156,7 @@ function reducer(state, { type, payload }) {
 
 }
 
-function evaluate({ currentOperand, previousOperand, operation }) {
+function evaluate({ currentOperand }) {
     let computation = ""
     computation = calculate(currentOperand)
     computation = parseFloat(computation)

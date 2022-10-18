@@ -119,6 +119,5 @@ function isWhole(num) {
 }
 
 
-checkBalancedParentheses('()')
 
 export default calculate

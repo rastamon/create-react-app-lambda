@@ -137,9 +137,9 @@ function reducer(state, { type, payload }) {
                     currentOperand: state.currentOperand
                 }
             }
-            if (state.operation != null) {
-                return state
-            }
+            // if (state.operation != null) {
+            //     return state
+            // }
 
 
             return {

@@ -45,4 +45,4 @@ class StackNode {
 }
 
 
-module.exports = LStack
+export default LStack

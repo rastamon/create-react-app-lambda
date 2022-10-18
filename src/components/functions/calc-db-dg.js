@@ -1,4 +1,4 @@
-const LStack = require('./Stack')
+import LStack from "./Stack";
 
 
 function calculate(exp) {
@@ -191,5 +191,5 @@ function isWhole(num) {
 
 checkBalancedParentheses('()')
 
-
-module.exports = calculate
+export default calculate
+export default checkBalancedParentheses

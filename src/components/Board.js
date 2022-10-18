@@ -1,5 +1,4 @@
 import React, { useReducer } from 'react';
-import React from 'react';
 import './styles/keyboard.css'
 import DigitButton from './digits';
 import OperationButton from './operators';

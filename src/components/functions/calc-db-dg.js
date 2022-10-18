@@ -191,5 +191,4 @@ function isWhole(num) {
 
 checkBalancedParentheses('()')
 
-export default calculate
-export default checkBalancedParentheses
+export default { calculate, checkBalancedParentheses }

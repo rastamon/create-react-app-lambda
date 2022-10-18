@@ -131,12 +131,12 @@ function reducer(state, { type, payload }) {
             // ) {
             //     return state
             // }
-            if (!(checkBalancedParentheses(state.currentOperand))) {
-                return {
-                    ...state,
-                    currentOperand: state.currentOperand
-                }
-            }
+            // if (!(checkBalancedParentheses(state.currentOperand))) {
+            //     return {
+            //         ...state,
+            //         currentOperand: state.currentOperand
+            //     }
+            // }
             // if (state.operation != null) {
             //     return state
             // }
